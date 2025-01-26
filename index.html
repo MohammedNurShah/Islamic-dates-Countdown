@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Dates 2025</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            border-radius: 50%; /* Make the logo circular */
+            object-fit: cover; /* Ensure the image fits well within the circle */
+            border: 2px solid #fff; /* Optional: Add a border for better visibility */
+        }
+        .header h1 {
+            font-size: 2rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .current-date {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #ffdd57;
+        }
+        .date-list {
+            list-style: none;
+            padding: 0;
+        }
+        .date-list li {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            color: #fff;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .date-list li:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .date-list li span {
+            font-weight: bold;
+            color: #ffdd57;
+        }
+        .countdown {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .countdown div {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        .note {
+            margin-top: 25px;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo and Title -->
+        <div class="header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnBAczZYC7q_3tfu6j4K6WUXXAetV2F0kBfg&s" alt="Fiji Muslim League Logo">
+            <h1>Fiji Muslim League</h1>
+        </div>
+
+        <div class="current-date" id="current-date"></div>
+        <ul class="date-list">
+            <li>
+                <span>Mirajun Nabi:</span> 27/01/2025 at 6:55 PM
+                <div class="countdown" id="countdown-1">
+                    <div><span id="days-1">0</span> Days</div>
+                    <div><span id="hours-1">0</span> Hours</div>
+                    <div><span id="minutes-1">0</span> Minutes</div>
+                    <div><span id="seconds-1">0</span> Seconds</div>
+                </div>
+            </li>
+            <li>
+                <span>Shabe Bar ‘at:</span> 13/02/2025
+                <div class="countdown" id="countdown-2">
+                    <div><span id="days-2">0</span> Days</div>
+                    <div><span id="hours-2">0</span> Hours</div>
+                    <div><span id="minutes-2">0</span> Minutes</div>
+                    <div><span id="seconds-2">0</span> Seconds</div>
+                </div>
+            </li>
+            <li>
+                <span>Ramadhan:</span> 02/03/2025
+                <div class="countdown" id="countdown-3">
+                    <div><span id="days-3">0</span> Days</div>
+                    <div><span id="hours-3">0</span> Hours</div>
+                    <div><span id="minutes-3">0</span> Minutes</div>
+                    <div><span id="seconds-3">0</span> Seconds</div>
+                </div>
+            </li>
+            <li>
+                <span>Eid ul Fitr:</span> 31/03/2025
+                <div class="countdown" id="countdown-4">
+                    <div><span id="days-4">0</span> Days</div>
+                    <div><span id="hours-4">0</span> Hours</div>
+                    <div><span id="minutes-4">0</span> Minutes</div>
+                    <div><span id="seconds-4">0</span> Seconds</div>
+                </div>
+            </li>
+            <li>
+                <span>Eid ul Adha:</span> 07/06/2025
+                <div class="countdown" id="countdown-5">
+                    <div><span id="days-5">0</span> Days</div>
+                    <div><span id="hours-5">0</span> Hours</div>
+                    <div><span id="minutes-5">0</span> Minutes</div>
+                    <div><span id="seconds-5">0</span> Seconds</div>
+                </div>
+            </li>
+            <li>
+                <span>Ashoora (10th Muharram):</span> 06/07/2025
+                <div class="countdown" id="countdown-6">
+                    <div><span id="days-6">0</span> Days</div>
+                    <div><span id="hours-6">0</span> Hours</div>
+                    <div><span id="minutes-6">0</span> Minutes</div>
+                    <div><span id="seconds-6">0</span> Seconds</div>
+                </div>
+            </li>
+            <li>
+                <span>Milad un-Nabi (12th Rabiul Awwal):</span> 05/09/2025
+                <div class="countdown" id="countdown-7">
+                    <div><span id="days-7">0</span> Days</div>
+                    <div><span id="hours-7">0</span> Hours</div>
+                    <div><span id="minutes-7">0</span> Minutes</div>
+                    <div><span id="seconds-7">0</span> Seconds</div>
+                </div>
+            </li>
+        </ul>
+        <p class="note">Note: These dates are estimated and subject to change based on the sighting of the new moon.</p>
+
+        <!-- Footer with Credit and Contact -->
+        <div class="footer">
+            Created by Nur Shah | Contact: 2527327
+        </div>
+    </div>
+
+    <script>
+        // Function to display current Fiji date and time
+        const currentDateElement = document.getElementById('current-date');
+        const options = { timeZone: 'Pacific/Fiji', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+        function updateCurrentDate() {
+            const currentDate = new Date().toLocaleDateString('en-US', options);
+            currentDateElement.textContent = `Current Fiji Date & Time: ${currentDate}`;
+        }
+        updateCurrentDate();
+        setInterval(updateCurrentDate, 1000);
+
+        // Target dates for countdowns (in Fiji time)
+        const dates = [
+            { name: "Mirajun Nabi", date: new Date('2025-01-27T18:55:00+12:00').getTime() },
+            { name: "Shabe Bar ‘at", date: new Date('2025-02-13T00:00:00+12:00').getTime() },
+            { name: "Ramadhan", date: new Date('2025-03-02T00:00:00+12:00').getTime() },
+            { name: "Eid ul Fitr", date: new Date('2025-03-31T00:00:00+12:00').getTime() },
+            { name: "Eid ul Adha", date: new Date('2025-06-07T00:00:00+12:00').getTime() },
+            { name: "Ashoora (10th Muharram)", date: new Date('2025-07-06T00:00:00+12:00').getTime() },
+            { name: "Milad un-Nabi (12th Rabiul Awwal)", date: new Date('2025-09-05T00:00:00+12:00').getTime() },
+        ];
+
+        // Function to send a notification
+        function sendNotification(eventName) {
+            if (Notification.permission === "granted") {
+                new Notification(`Countdown Finished: ${eventName}`, {
+                    body: `The countdown for ${eventName} has finished!`,
+                    icon: "https://via.placeholder.com/50", // Add an icon if needed
+                });
+            } else if (Notification.permission !== "denied") {
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") {
+                        new Notification(`Countdown Finished: ${eventName}`, {
+                            body: `The countdown for ${eventName} has finished!`,
+                            icon: "https://via.placeholder.com/50", // Add an icon if needed
+                        });
+                    }
+                });
+            }
+        }
+
+        // Countdown function
+        function updateCountdown(targetDate, countdownId, eventName) {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById(`days-${countdownId}`).textContent = days;
+                document.getElementById(`hours-${countdownId}`).textContent = hours;
+                document.getElementById(`minutes-${countdownId}`).textContent = minutes;
+                document.getElementById(`seconds-${countdownId}`).textContent = seconds;
+            } else {
+                document.getElementById(`countdown-${countdownId}`).innerHTML = "<div>Event has started!</div>";
+                sendNotification(eventName); // Send notification when countdown finishes
+            }
+        }
+
+        // Update countdowns every second
+        setInterval(() => {
+            dates.forEach((event, index) => updateCountdown(event.date, index + 1, event.name));
+        }, 1000);
+    </script>
+</body>
+</html>

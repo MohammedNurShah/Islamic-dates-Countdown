@@ -19,7 +19,7 @@
         .container {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            padding: 40px;
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
             text-align: center;
@@ -34,21 +34,21 @@
             margin-bottom: 20px;
         }
         .header img {
-            width: 80px;
-            height: 80px;
-            margin-right: 15px;
-            border-radius: 50%; /* Make the logo circular */
-            object-fit: cover; /* Ensure the image fits well within the circle */
-            border: 2px solid #fff; /* Optional: Add a border for better visibility */
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #fff;
         }
         .header h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         .current-date {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: 1rem;
+            margin-bottom: 20px;
             color: #ffdd57;
         }
         .date-list {
@@ -57,10 +57,10 @@
         }
         .date-list li {
             background: rgba(255, 255, 255, 0.2);
-            margin: 15px 0;
-            padding: 20px;
+            margin: 10px 0;
+            padding: 15px;
             border-radius: 10px;
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             color: #fff;
             transition: transform 0.3s ease, background 0.3s ease;
         }
@@ -76,7 +76,7 @@
             display: flex;
             justify-content: space-between;
             margin-top: 10px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         .countdown div {
             background: rgba(0, 0, 0, 0.3);
@@ -85,15 +85,48 @@
             margin: 0 5px;
         }
         .note {
-            margin-top: 25px;
+            margin-top: 20px;
             font-style: italic;
             color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         .footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
+            margin-top: 20px;
+            font-size: 0.8rem;
             color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .header img {
+                width: 50px;
+                height: 50px;
+            }
+            .header h1 {
+                font-size: 1.2rem;
+            }
+            .current-date {
+                font-size: 0.9rem;
+            }
+            .date-list li {
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+            .countdown {
+                font-size: 0.7rem;
+            }
+            .countdown div {
+                padding: 3px 8px;
+            }
+            .note {
+                font-size: 0.7rem;
+            }
+            .footer {
+                font-size: 0.7rem;
+            }
         }
     </style>
 </head>
